@@ -29,29 +29,29 @@
       <nav
         class=" bg-black right-0 z-30 translate-x-fullbg-black fixed left-0 top-12 h-auto w-64 p-4 pt-10 space-y-4 overflow-y-auto transition-transform duration-200 ease-in-out transform translate-x-full flex flex-col items-start rounded rounded-br-xl"
         id="menu-content">
-        <a href="#home" class="menu-option hover:text-blue-500">Inicio</a>
-        <a href="#about" class="menu-option hover:text-blue-500">Conoceme</a>
-        <a href="#skills" class="menu-option hover:text-blue-500">Skills</a>
-        <a href="#courses" class="menu-option hover:text-blue-500">Cursos</a>
-        <a href="#portfolio" class="menu-option hover:text-blue-500">Portafolio</a>
-        <a href="#blogs" class="menu-option hover:text-blue-500">Blogs</a>
-        <a href="#contact" class="menu-option hover:text-blue-500">Contacto</a>
+        <a href="#home" class="menu-option hover:text-primary">Inicio</a>
+        <a href="#about" class="menu-option hover:text-primary">Conoceme</a>
+        <a href="#skills" class="menu-option hover:text-primary">Skills</a>
+        <a href="#courses" class="menu-option hover:text-primary">Cursos</a>
+        <a href="#portfolio" class="menu-option hover:text-primary">Portafolio</a>
+        <a href="#blogs" class="menu-option hover:text-primary">Blogs</a>
+        <a href="#contact" class="menu-option hover:text-primary">Contacto</a>
       </nav>
     </div>
     <!-- MENU MOBILE -->
 
     <!-- MENU DESTOK -->
     <div class="navbar-grid-destok hidden">
-      <a class="navbar-logo">
+      <a class="navbar-logo" href="/">
         <img src="./img/logo-jhs.png" alt="" srcset="">
       </a>
       <nav class="nav-menu">
-        <a href="#home" class="hover:text-white">Inicio</a>
-        <a href="#about" class="hover:text-white">Conoceme</a>
-        <a href="#skills" class="hover:text-white">Skills</a>
-        <a href="#courses" class="hover:text-white">Cursos</a>
-        <a href="#portfolio" class="hover:text-white">Portafolio</a>
-        <a href="#blogs" class="hover:text-white">Blogs</a>
+        <a href="#home" class="hover:text-primary">Inicio</a>
+        <a href="#about" class="hover:text-primary">Conoceme</a>
+        <a href="#skills" class="hover:text-primary">Skills</a>
+        <a href="#courses" class="hover:text-primary">Cursos</a>
+        <a href="#portfolio" class="hover:text-primary">Portafolio</a>
+        <a href="#blogs" class="hover:text-primary">Blogs</a>
       </nav>
       <a href="#contact" class="btn-contact-nav">Contacto
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -95,7 +95,6 @@
                 especializo en Backend, comparto contenido en redes sociales tips y cursos para la
                 cominidad hispana especialmente en twitch.
               <div class="mt-4">
-                <!-- <a class="btn-about-modal" onclick="openModal('modelAbout')">Saber más</a> -->
                 <a class="btn-about-modal" data-modal-target="modalAbout" data-modal-toggle="modalAbout">Saber más</a>
               </div>
               </p>
@@ -376,6 +375,9 @@
                   </div>
                 </div>
               </div>
+              <div class="btn-view-more">
+                <a href="">Ver mas</a>
+              </div>
             </div>
           </div>
         </section>
@@ -491,7 +493,10 @@
                   </div>
                 </div>
               </div>
-
+            </div>
+            
+            <div class="btn-view-more_blog">
+              <a href="">Ver mas</a>
             </div>
           </div>
         </section>
@@ -555,7 +560,7 @@
                     class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
                 <button
-                  class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Enviar</button>
+                  class="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-gradient-to-b hover:from-[#10afef] hover:to-[#2c2d50] rounded text-lg">Enviar</button>
               </form>
             </div>
           </div>
@@ -579,6 +584,7 @@
             </g>
           </svg>
         </a>
+
         <a href="https://www.instagram.com/jhs_code/" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -606,6 +612,7 @@
             </g>
           </svg>
         </a>
+
         <a href="https://www.tiktok.com/@johannht2" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -619,6 +626,7 @@
             </g>
           </svg>
         </a>
+
         <a href="https://twitter.com/Johannht2" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -633,7 +641,7 @@
           </svg>
         </a>
       </div>
-      <div class="grid-items-footer"><img class="w-7" src="./img/logo-jhs.png" alt="" srcset=""></div>
+      <div class="grid-items-footer"><a href="/"><img class="w-7" src="./img/logo-jhs.png" alt="" srcset=""></a></div>
       <div class="grid-items-footer text-white">Copyright 2023. All Rights Reserved</div>
     </footer>
   </section>
@@ -686,14 +694,14 @@
               </div>
 
               <div class="p-3">
-                <h2 class="text-lg font-bold">Experiencia Laboral</h2>
+                <h2 class="text-lg text-secondary font-bold">Experiencia Laboral</h2>
 
                 <ol class="exp-content">
                   <li class="relative mb-6 sm:mb-0">
                     <div class="flex items-center">
                       <div
                         class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path
                             d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -702,7 +710,7 @@
                       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                     </div>
                     <div class="mt-3 sm:pe-8">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Corp. Slas Developments</h3>
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Corp. Slas Developments</h3>
                       <time
                         class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">CEO-FUNDER</time>
                       <p class="text-base font-normal text-gray-500 dark:text-gray-400">2021 - Actualidad
@@ -713,7 +721,7 @@
                     <div class="flex items-center">
                       <div
                         class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path
                             d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -722,7 +730,7 @@
                       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                     </div>
                     <div class="mt-3 sm:pe-8">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">GDA Lab.</h3>
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">GDA Lab.</h3>
                       <time
                         class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
                         Engineer</time>
@@ -733,7 +741,7 @@
                     <div class="flex items-center">
                       <div
                         class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path
                             d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -742,7 +750,7 @@
                       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                     </div>
                     <div class="mt-3 sm:pe-8">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grupo DTG</h3>
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Grupo DTG</h3>
                       <time
                         class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
                         Engineer</time>
@@ -753,7 +761,7 @@
                     <div class="flex items-center">
                       <div
                         class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path
                             d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
@@ -762,7 +770,7 @@
                       <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                     </div>
                     <div class="mt-3 sm:pe-8">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Puntotec Corp.</h3>
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Puntotec Corp.</h3>
                       <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Gerente
                         de Desarrollo</time>
                       <p class="text-base font-normal text-gray-500 dark:text-gray-400">2018 - 2022</p>
@@ -772,95 +780,95 @@
               </div>
 
               <div class="p-3">
-                <h2 class="text-lg font-bold">Skills</h2>
+                <h2 class="text-lg text-secondary font-bold">Skills</h2>
                 <div class="skill-grid">
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">HTML5</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">HTML5</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">CSS3</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">CSS3</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">60%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 60%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">PHP</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">PHP</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">JavaScript</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">JavaScript</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">50%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 50%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">Python</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">Python</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">35%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 35%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">Laravel</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">Laravel</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">Tailwind Css</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">Tailwind Css</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">45%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 45%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">Bootstrap</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">Bootstrap</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">45%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 45%"></div>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="flex justify-between mb-1">
-                      <span class="text-base font-medium text-blue-700 dark:text-white">WordPress</span>
-                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                      <span class="text-base font-medium text-secondary dark:text-white">WordPress</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">50%</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 50%"></div>
                     </div>
                   </div>
 

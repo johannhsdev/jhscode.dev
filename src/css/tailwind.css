@@ -35,7 +35,7 @@
 }
 
 .btn-contact-nav {
-    @apply inline-flex items-center bg-blue-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0
+    @apply inline-flex items-center transition-all ease-in-out bg-primary border-0 py-1 px-3 focus:outline-none hover:bg-gradient-to-t hover:from-[#10afef] hover:to-[#2c2d50] rounded text-base mt-4 md:mt-0
 }
 
 .btn-hamburguer-mobile {
@@ -124,7 +124,7 @@
 .btn-about-modal {
     @apply
     /* MOBILE */
-    cursor-pointer transition-all ease-in hover:bg-blue-600 text-2xl font-bold border-4 p-1 pl-2 pr-2 rounded-full
+    cursor-pointer transition-all ease-in-out hover:bg-gradient-to-t hover:from-[#10afef] hover:to-[#2c2d50] text-2xl font-bold border-4 p-1 pl-2 pr-2 rounded-full
     /* DESTOK */
     /* TABLE */
 }
@@ -209,7 +209,7 @@
 .svg-items-circle {
     @apply
     /* MOBILE */
-    w-16 h-16 mb-4 inline-flex items-center justify-center rounded-full bg-sky-600 text-indigo-500 flex-shrink-0
+    w-16 h-16 mb-4 inline-flex items-center justify-center rounded-full bg-primary text-indigo-500 flex-shrink-0
     /* MOBILE */
     sm:mr-8 sm:mb-0
 }
@@ -237,13 +237,17 @@
 .btn-adquirir-course {
     @apply
     /* MOBILE */
-    mt-3 text-white inline-flex items-center pt-2 pb-2 pl-5 pr-5 bg-blue-700 rounded-full
+    mt-3 text-white inline-flex items-center pt-2 pb-2 pl-5 pr-5 bg-primary hover:bg-secondary transition-all ease-in-out hover:shadow-md rounded-full
 }
 
 .btn-view-more {
     @apply
     /* MOBILE */
-    flex mx-auto p-1 pl-4 pr-4 rounded-full bg-blue-400 text-white font-bold text-xl
+    flex mx-auto p-1 pl-4 pr-4 rounded-full bg-primary hover:bg-secondary transition-all ease-in-out hover:border-2 text-white font-bold text-xl
+}
+
+.btn-view-more_blog{
+    @apply flex justify-center w-32 mx-auto p-1 pl-4 pr-4 rounded-full bg-secondary hover:bg-primary transition-all ease-in-out hover:border-2 text-white font-bold text-xl
 }
 
 /* END COURSES */
@@ -320,7 +324,7 @@
 .btn-view-project {
     @apply
     /* MOBILE */
-    p-2 pl-4 pr-4 rounded-full text-white bg-blue-700 mb-3
+    p-2 pl-4 pr-4 rounded-full text-white bg-primary hover:bg-secondary transition-all ease-in-out mb-3
     /* DESTOK */
     lg:mb-0
     /* MOBILE */
@@ -515,7 +519,7 @@
 }
 
 .download-cv {
-    @apply pt-2 pb-2 p-5 bg-blue-800 font-semibold text-xs text-white rounded-full transition-all ease-linear hover:pt-1 hover:pb-1 hover:p-3 hover:bg-blue-600
+    @apply pt-2 pb-2 p-5 bg-secondary font-semibold text-xs text-white rounded-full transition-all ease-linear hover:pt-1 hover:pb-1 hover:p-3 hover:bg-gradient-to-t hover:from-[#10afef] hover:to-[#2c2d50]
 }
 
 /* END FOOTER */

@@ -14,6 +14,17 @@ module.exports = {
         'blog-screen': 'url(../img/background-blogs.png)',
         'contact-screen': 'url(../img/background-contact.png)',
       },
+
+      backgroundColor: theme =>({
+				...theme('colors'),
+				'primary': '#10afef',
+				'secondary': '#2c2d50',
+			}),
+
+      textColor:{
+				'primary': '#10afef',
+				'secondary': '#2c2d50',
+			},
     },
   },
   plugins: [
