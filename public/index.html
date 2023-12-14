@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../img/favico.png" />
+  <title>Johann Hurtado</title>
+  <link rel="stylesheet" href="../public/css/tailwind.css">
+</head>
+
+<body>
+  <header class="header-navbar">
+
+    <!-- MENU MOBILE -->
+    <div class="navbar-grid-mobile md:hidden" id="mobile-navbar">
+      <a class="navbar-logo">
+        <img class="nav-size-img" src="./img/logo-jhs.png" alt="" srcset="">
+      </a>
+      <a class="btn-hamburguer-mobile" id="hamburger-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-20 top-12">
+      <div class="bg-black opacity-50 min-h-screen min-w-full" id="menu-overlay"></div>
+      <nav
+        class=" bg-black right-0 z-30 translate-x-fullbg-black fixed left-0 top-12 h-auto w-64 p-4 pt-10 space-y-4 overflow-y-auto transition-transform duration-200 ease-in-out transform translate-x-full flex flex-col items-start rounded rounded-br-xl"
+        id="menu-content">
+        <a href="#home" class="menu-option hover:text-blue-500">Inicio</a>
+        <a href="#about" class="menu-option hover:text-blue-500">Conoceme</a>
+        <a href="#skills" class="menu-option hover:text-blue-500">Skills</a>
+        <a href="#courses" class="menu-option hover:text-blue-500">Cursos</a>
+        <a href="#portfolio" class="menu-option hover:text-blue-500">Portafolio</a>
+        <a href="#blogs" class="menu-option hover:text-blue-500">Blogs</a>
+        <a href="#contact" class="menu-option hover:text-blue-500">Contacto</a>
+      </nav>
+    </div>
+    <!-- MENU MOBILE -->
+
+    <!-- MENU DESTOK -->
+    <div class="navbar-grid-destok hidden">
+      <a class="navbar-logo">
+        <img src="./img/logo-jhs.png" alt="" srcset="">
+      </a>
+      <nav class="nav-menu">
+        <a href="#home" class="hover:text-white">Inicio</a>
+        <a href="#about" class="hover:text-white">Conoceme</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#courses" class="hover:text-white">Cursos</a>
+        <a href="#portfolio" class="hover:text-white">Portafolio</a>
+        <a href="#blogs" class="hover:text-white">Blogs</a>
+      </nav>
+      <a href="#contact" class="btn-contact-nav">Contacto
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <!-- MENU DESTOK -->
+  </header>
+
+  <section class="w-full h-screen">
+
+    <!-- SECCION HOME -->
+    <div class="w-full h-full" id="home">
+      <div class="size-banner banner-home">
+        <div class=" w-full h-full center-x-y">
+          <h1 class="title-home"> Johann Hurtado</h1>
+          <p class="sub-title-home">[ Ingeriero de Software, FullStack ]</p>
+          <a href="#about" class="mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20">
+              <path fill="#ffff" fill-rule="evenodd"
+                d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END HOME -->
+
+    <!-- SECCION ABOUT -->
+    <div class="w-full h-auto" id="about">
+      <div class="w-full h-full size-banner bg-about-screen">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <div class="box-about">
+            <img class="profile-image" src="./img/imagen-johann.png" alt="imagen de Johann Hurtado">
+            <div class="container-box-about">
+              <h2 class="box-title-about">Sobre mi</h2>
+              <p class="box-p-about">Mi nombre es Johann Hurtado soy un apasionado por el mundo tech, me
+                especializo en Backend, comparto contenido en redes sociales tips y cursos para la
+                cominidad hispana especialmente en twitch.
+              <div class="mt-4">
+                <!-- <a class="btn-about-modal" onclick="openModal('modelAbout')">Saber más</a> -->
+                <a class="btn-about-modal" data-modal-target="modalAbout" data-modal-toggle="modalAbout">Saber más</a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- SECCION SKILLS -->
+    <div class="w-full h-auto" id="skills">
+      <div class="size-banner bg-skills-screen">
+        <div class="container-skills">
+          <h2 class="text-6xl font-bold text-stone-600 mb-14 mt-9 text-center">[ SKILLS ]</h2>
+          <div class="flex flex-wrap m-4">
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/html.png">
+                <div class="w-full">
+                  <h2 class="h2-title">HTML5</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/css-3.png">
+                <div class="w-full">
+                  <h2 class="h2-title">CSS3</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/Bootstrap.png">
+                <div class="w-full">
+                  <h2 class="h2-title">Bootstrap</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/icons8-viento-de-cola-96.png">
+                <div class="w-full">
+                  <h2 class="h2-title">Tailwindcss</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/php.png">
+                <div class="w-full">
+                  <h2 class="h2-title">PHP</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/WordPress.png">
+                <div class="w-full">
+                  <h2 class="h2-title">WordPress</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/Laravel.png">
+                <div class="w-full">
+                  <h2 class="h2-title">Laravel</h2>
+                </div>
+              </div>
+            </div>
+            <div class="items-skills">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="img-skills" src="./img/skills/icons8-python-96.png">
+                <div class="w-full">
+                  <h2 class="h2-title">Python</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SKILLS -->
+
+    <!-- SECCION COURSES -->
+    <div class="w-full h-auto" id="courses">
+      <div class="size-banner bg-courses-screen">
+        <div class="container-courses">
+          <div class="p-4 mt-9 flex">
+            <svg fill="#ffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0 0 94.504 94.504"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <path
+                    d="M93.918,45.833L69.799,21.714c-0.75-0.75-2.077-0.75-2.827,0l-5.229,5.229c-0.781,0.781-0.781,2.047,0,2.828
+                                            l17.477,17.475L61.744,64.724c-0.781,0.781-0.781,2.047,0,2.828l5.229,5.229c0.375,0.375,0.884,0.587,1.414,0.587
+                                            c0.529,0,1.039-0.212,1.414-0.587l24.117-24.118C94.699,47.881,94.699,46.614,93.918,45.833z" />
+                  <path d="M32.759,64.724L15.285,47.248l17.477-17.475c0.375-0.375,0.586-0.883,0.586-1.414c0-0.53-0.21-1.039-0.586-1.414
+                                            l-5.229-5.229c-0.375-0.375-0.884-0.586-1.414-0.586c-0.53,0-1.039,0.211-1.414,0.586L0.585,45.833
+                                            c-0.781,0.781-0.781,2.047,0,2.829L24.704,72.78c0.375,0.375,0.884,0.587,1.414,0.587c0.53,0,1.039-0.212,1.414-0.587l5.229-5.229
+                                            C33.542,66.771,33.542,65.505,32.759,64.724z" />
+                  <path
+                    d="M60.967,13.6c-0.254-0.466-0.682-0.812-1.19-0.962l-4.239-1.251c-1.058-0.314-2.172,0.293-2.484,1.352L33.375,79.382
+                                            c-0.15,0.509-0.092,1.056,0.161,1.521c0.253,0.467,0.682,0.812,1.19,0.963l4.239,1.251c0.189,0.056,0.38,0.083,0.567,0.083
+                                            c0.863,0,1.66-0.564,1.917-1.435l19.679-66.644C61.278,14.612,61.221,14.065,60.967,13.6z" />
+                </g>
+              </g>
+            </svg>
+            <h2 class="text-7xl font-bold text-white text-start underline mt-2">Cursos</h2>
+          </div>
+          <div class="flex flex-wrap m-4">
+            <div class="items-courses">
+              <div class="box-items-courses">
+                <div class="svg-items-circle">
+                  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918ZM17.6569 12L14.1213 15.5355L12.7071 14.1213L14.8284 12L12.7071 9.87868L14.1213 8.46447L17.6569 12ZM6.34315 12L9.87868 8.46447L11.2929 9.87868L9.17157 12L11.2929 14.1213L9.87868 15.5355L6.34315 12Z"
+                      fill="rgba(255,255,255,1)"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="title-items-courses">Fundamentos de la Programacion</h2>
+                  <p class="description-items-courses">Bases fundamentales que todo programador debe conocer para
+                    comenzar a programar.</p>
+                  <a class="btn-adquirir-course" href="#">Adquirir</a>
+                </div>
+              </div>
+            </div>
+            <div class="items-courses">
+              <div class="box-items-courses">
+                <div class="svg-items-circle">
+                  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 18.1778L16.6192 16.9222L17.2434 10.1444H9.02648L8.82219 7.88889H17.4477L17.6747 5.67778H6.32535L6.96091 12.3556H14.7806L14.5195 15.2222L12 15.8889L9.48045 15.2222L9.32156 13.3778H7.0517L7.38083 16.9222L12 18.1778ZM3 2H21L19.377 20L12 22L4.62295 20L3 2Z"
+                      fill="rgba(255,255,255,1)"></path>
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="title-items-courses">HTML5</h2>
+                  <p class="description-items-courses">Bases fundamentales que todo programador debe conocer para
+                    comenzar a programar.</p>
+                  <a class="btn-adquirir-course" href="#">Adquirir</a>
+                </div>
+              </div>
+            </div>
+            <div class="items-courses">
+              <div class="box-items-courses">
+                <div class="svg-items-circle">
+                  <svg fill="#ffff" class="svg-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M 16 7.1679688 C 7.165 7.1679688 0 10.932031 0 15.582031 C 0 20.232031 7.165 23.998047 16 23.998047 C 24.835 23.998047 32 20.232031 32 15.582031 C 32 10.932031 24.835 7.1679687 16 7.1679688 z M 16 8.0078125 C 24.57 8.0078125 31.160156 11.617031 31.160156 15.582031 C 31.160156 19.547031 24.565 23.158203 16 23.158203 C 7.43 23.158203 0.83984375 19.547031 0.83984375 15.582031 C 0.83984375 11.617031 7.435 8.0078125 16 8.0078125 z M 14.056641 9.6757812 L 12.439453 18.015625 L 14.244141 18.015625 L 15.175781 13.236328 C 16.644781 13.236328 17.252531 13.177844 17.519531 13.464844 C 17.796531 13.761844 17.654578 14.087625 16.892578 18.015625 L 18.722656 18.015625 C 19.514656 13.954625 19.864812 13.092922 19.132812 12.419922 C 18.435812 11.776922 16.991594 11.890625 15.433594 11.890625 L 15.863281 9.6757812 L 14.056641 9.6757812 z M 6.4882812 11.896484 L 4.8691406 20.242188 L 6.6855469 20.242188 L 7.1152344 18.025391 C 9.1482344 18.025391 10.411125 18.173078 11.578125 17.080078 C 12.869125 15.893078 13.206156 13.780656 12.285156 12.722656 C 11.805156 12.168656 11.032375 11.896484 9.984375 11.896484 L 6.4882812 11.896484 z M 20.679688 11.896484 L 19.058594 20.242188 L 20.878906 20.242188 L 21.308594 18.025391 C 23.445594 18.025391 24.628484 18.149078 25.771484 17.080078 C 27.062484 15.893078 27.399516 13.780656 26.478516 12.722656 C 25.998516 12.168656 25.225734 11.896484 24.177734 11.896484 L 20.679688 11.896484 z M 9.3359375 13.210938 C 10.470781 13.242906 11.120203 13.483203 10.845703 14.908203 C 10.454703 16.912203 9.0759062 16.705078 7.3789062 16.705078 L 8.0566406 13.212891 C 8.5266406 13.212891 8.9576562 13.200281 9.3359375 13.210938 z M 23.529297 13.210938 C 24.665547 13.242906 25.307703 13.483203 25.033203 14.908203 C 24.637203 16.941203 23.218406 16.705078 21.566406 16.705078 L 22.244141 13.212891 C 22.716641 13.212891 23.150547 13.200281 23.529297 13.210938 z" />
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="title-items-courses">PHP Basico</h2>
+                  <p class="description-items-courses">Bases fundamentales que todo programador debe conocer para
+                    comenzar a programar.</p>
+                  <a class="btn-adquirir-course" href="#">Adquirir</a>
+                </div>
+              </div>
+            </div>
+            <div class="items-courses">
+              <div class="box-items-courses">
+                <div class="svg-items-circle">
+                  <svg fill="#ffff" class="svg-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M 7.5566406 5.0058594 C 6.8996406 5.0338594 1.8892031 5.4591875 1.5332031 5.4921875 C 1.1772031 5.5211875 0.784625 5.6858281 1.140625 6.5488281 C 1.496625 7.4118281 7.1857031 19.951406 7.3457031 20.316406 C 7.5047031 20.680406 7.9178125 21.275156 8.8828125 21.035156 C 9.8718125 20.791156 13.302734 19.874094 15.177734 19.371094 C 16.166734 21.207094 18.1875 24.928938 18.5625 25.460938 C 19.0595 26.174937 19.405922 26.053453 20.169922 25.814453 C 20.769922 25.627453 29.525922 22.407141 29.919922 22.244141 C 30.313922 22.076141 30.556062 21.961688 30.289062 21.554688 C 30.092063 21.257687 27.781266 18.092594 26.572266 16.433594 C 27.402266 16.208594 30.350063 15.407406 30.664062 15.316406 C 31.033063 15.219406 31.084812 15.038594 30.882812 14.808594 C 30.685813 14.578594 27.940031 11.064703 27.457031 10.470703 C 26.974031 9.8767031 26.734453 9.9804375 26.439453 10.023438 C 26.139453 10.066437 22.666672 10.665422 22.263672 10.732422 C 21.860672 10.804422 21.607469 10.967266 21.855469 11.322266 C 22.075469 11.638266 24.359234 14.952641 24.865234 15.681641 L 15.785156 17.904297 L 8.5605469 5.5605469 C 8.2745469 5.1245469 8.2126406 4.9718594 7.5566406 5.0058594 z M 7.4433594 5.8632812 C 7.6123594 5.8532813 7.5932969 5.8910937 7.6542969 5.9960938 C 7.6542969 5.9960938 14.319641 17.760797 14.431641 17.966797 C 14.553641 18.172797 14.484953 18.235766 14.376953 18.259766 C 14.268953 18.283766 9.1821563 19.528797 8.9101562 19.591797 C 8.6381562 19.653797 8.6384688 19.625297 8.6054688 19.529297 C 8.5724688 19.433297 2.5605625 6.7449375 2.4765625 6.5859375 C 2.3925625 6.4279375 2.3965625 6.3027344 2.4765625 6.3027344 C 2.5565625 6.3027344 7.2793594 5.8722812 7.4433594 5.8632812 z M 26.771484 10.845703 C 26.838859 10.861328 26.909641 10.911797 26.994141 11.029297 C 27.163141 11.264297 29.459828 14.240469 29.548828 14.355469 C 29.632828 14.466469 29.482156 14.534031 29.285156 14.582031 C 29.088156 14.625031 25.835938 15.449219 25.835938 15.449219 L 23.177734 11.720703 C 23.102734 11.610703 23.042469 11.504469 23.230469 11.480469 C 23.417469 11.456469 26.436266 10.894234 26.572266 10.865234 C 26.640266 10.848234 26.704109 10.830078 26.771484 10.845703 z M 25.527344 16.617188 C 25.590094 16.624312 25.642891 16.66875 25.712891 16.78125 C 25.849891 17.01225 28.63875 20.881719 28.71875 21.011719 C 28.79875 21.140719 28.881047 21.227359 28.623047 21.318359 C 28.370047 21.414359 20.014469 24.295188 19.855469 24.367188 C 19.691469 24.439187 19.563422 24.462391 19.357422 24.150391 C 19.151422 23.838391 16.433594 19.03125 16.433594 19.03125 L 25.28125 16.677734 C 25.39125 16.641734 25.464594 16.610063 25.527344 16.617188 z" />
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h2 class="title-items-courses">Laravel 10</h2>
+                  <p class="description-items-courses">Bases fundamentales que todo programador debe conocer para
+                    comenzar a programar.</p>
+                  <a class="btn-adquirir-course" href="#">Adquirir</a>
+                </div>
+              </div>
+            </div>
+            <div class="btn-view-more">
+              <a href="">Ver mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END COURSES -->
+
+    <!-- SECCION PORTAFOLIO -->
+    <div class="w-full h-auto bg-red-700" id="portfolio">
+      <div class="size-banner bg-portfolio-screen">
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <h2 class="title-portfolio">Portafolio</h2>
+            <div class="flex flex-wrap">
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/pritzkow.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Pritzkow Construction</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/mariom.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Mariom</h2>
+                    <h3 class="description-text__h3">WebSite Blog personal</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/rojascazaux.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Rojaz Cazaux</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/genesismil.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Genesis 1000</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/adh.jpg">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Autismo dejan huellas</h2>
+                    <h3 class="description-text__h3">WebSite Org</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/cafre.jpg">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Cafre C.A</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" href="#">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- END PORTAFOLIO -->
+
+    <!-- SECCION BLOG -->
+    <div class="w-full h-auto" id="blogs">
+      <div class="size-banner bg-blog-screen">
+        <div class="container-blog">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svg-blog" viewBox="0 0 512 512" version="1.1">
+            <path d="" stroke="none" fill="#080404" fill-rule="evenodd" />
+            <path
+              d="M 60.666 60.729 C 54.173 62.900, 46.851 69.659, 43.886 76.221 C 41.513 81.471, 41.498 81.729, 41.199 122.744 L 40.898 163.988 43.403 166.494 C 46.388 169.478, 48.011 169.621, 51.043 167.166 C 52.772 165.766, 53.419 163.991, 53.778 159.666 L 54.248 154 82.279 154 L 110.310 154 118.602 145.782 C 123.162 141.262, 127.705 137.243, 128.697 136.852 C 129.689 136.461, 146.475 136.112, 166 136.076 C 205.032 136.006, 204.638 135.951, 209.742 142.204 C 211.221 144.017, 214.301 147.412, 216.584 149.750 L 220.737 154 340.319 154 L 459.900 154 460.200 159.648 C 460.457 164.492, 460.898 165.593, 463.296 167.378 C 465.879 169.300, 466.298 169.343, 468.796 167.941 L 471.500 166.424 471.785 124.962 C 471.980 96.566, 471.716 82.208, 470.947 79.401 C 469.290 73.349, 463.324 66.162, 457 62.599 L 451.500 59.500 258.500 59.306 C 83.129 59.131, 65.058 59.261, 60.666 60.729 M 63.350 72.923 C 60.961 74.011, 58.095 76.437, 56.600 78.639 L 54 82.464 54 111.732 L 54 141 80.278 141 L 106.555 141 111.852 134.982 C 121.476 124.049, 119.146 124.500, 166 124.500 C 212.892 124.500, 210.862 124.106, 219.641 134.908 L 224.500 140.886 342.250 140.943 L 460 141 460 112.386 C 460 85.378, 459.885 83.567, 457.947 80.119 C 456.817 78.110, 454.263 75.348, 452.270 73.983 L 448.647 71.500 258.073 71.266 C 73.057 71.040, 67.379 71.088, 63.350 72.923 M 407.500 87.662 C 400.590 91.305, 396.044 98.185, 396.044 105 C 396.044 109.487, 398.952 115.757, 402.624 119.186 C 412.775 128.668, 429.665 123.840, 433.591 110.336 C 435.402 104.107, 434.317 98.484, 430.274 93.141 C 425.453 86.770, 414.287 84.084, 407.500 87.662 M 356.459 88.880 C 337.867 97.325, 343.773 125.231, 364.153 125.231 C 370.094 125.231, 375.411 122.573, 379.447 117.587 C 382.222 114.158, 382.500 113.155, 382.500 106.584 C 382.500 97.584, 379.947 93.194, 372.554 89.483 C 366.700 86.545, 361.988 86.368, 356.459 88.880 M 306.637 89.465 C 296.415 93.109, 291.132 105.201, 295.351 115.298 C 297.832 121.235, 306.517 126.989, 313 126.989 C 316.421 126.989, 322.141 124.752, 325.111 122.253 C 336.940 112.300, 332.558 93.217, 317.500 89.104 C 312.474 87.731, 311.401 87.767, 306.637 89.465 M 410.944 99.844 C 406.154 103.723, 409.332 112, 415.611 112 C 418.906 112, 422 108.610, 422 105 C 422 99.007, 415.641 96.041, 410.944 99.844 M 361.315 100.007 C 354.626 102.702, 356.810 113, 364.071 113 C 370.552 113, 373.416 105.045, 368.365 101.073 C 365.495 98.815, 364.608 98.680, 361.315 100.007 M 307.557 103.223 C 304.071 108.198, 307.178 114.385, 313.078 114.217 C 319.198 114.043, 322.200 107.200, 318 103 C 315.198 100.198, 309.592 100.317, 307.557 103.223 M 28 179.933 C 19.227 181.727, 10.738 188.872, 7.606 197.096 C 6.094 201.066, 5.957 207.174, 6.214 259.080 L 6.500 316.659 9.529 321.580 C 12.820 326.926, 19.929 332.331, 25.823 333.967 C 30.927 335.385, 481.073 335.385, 486.177 333.967 C 492.071 332.331, 499.180 326.926, 502.471 321.580 L 505.500 316.659 505.781 258.837 C 506.059 201.622, 506.040 200.963, 503.918 196.031 C 501.530 190.481, 495.129 184.019, 489.317 181.292 C 485.686 179.587, 474.445 179.493, 258.500 179.359 C 133.650 179.281, 29.925 179.539, 28 179.933 M 25.241 193.995 C 23.448 195.088, 21.088 197.448, 19.995 199.241 C 18.076 202.387, 18.007 204.381, 18.004 256.864 C 18 310.906, 18.013 311.251, 20.184 315.114 C 21.576 317.590, 23.867 319.725, 26.500 321 C 30.594 322.982, 32.672 323, 256 323 C 479.328 323, 481.406 322.982, 485.500 321 C 488.133 319.725, 490.424 317.590, 491.816 315.114 C 493.986 311.252, 494 310.890, 493.998 257.364 C 493.997 197.321, 494.180 198.998, 487.102 194.270 L 483.704 192 256.102 192.004 C 30.755 192.007, 28.468 192.027, 25.241 193.995 M 106.655 218.829 C 105.178 220.460, 105 224.609, 105 257.329 C 105 293.163, 105.048 294.048, 107.085 296.085 C 109.057 298.057, 110.039 298.151, 125.335 297.823 C 143.036 297.444, 146.325 296.528, 152.197 290.342 C 160.278 281.827, 160.122 266.897, 151.862 258.363 C 149.753 256.183, 149.190 255.001, 150.017 254.489 C 152.320 253.066, 154.956 245.483, 154.978 240.218 C 155.005 233.828, 152.980 228.640, 148.699 224.128 C 142.923 218.039, 139.320 217.047, 122.905 217.022 C 110.019 217.003, 108.116 217.214, 106.655 218.829 M 182.557 219.223 C 181.217 221.135, 181 226.507, 181 257.723 C 181 292.667, 181.074 294.074, 183 296 C 184.879 297.879, 186.333 298, 207.045 298 L 229.091 298 231.608 295.483 C 233.459 293.632, 233.943 292.377, 233.440 290.733 C 232.008 286.061, 231.729 286, 211.878 286 L 193 286 193 253.071 C 193 224.470, 192.794 219.936, 191.429 218.571 C 189.096 216.239, 184.405 216.583, 182.557 219.223 M 266 219.142 C 251.441 224.834, 242.402 235.788, 239.815 250.874 C 237.640 263.559, 241.250 275.100, 250.448 284.861 C 266.127 301.502, 291.594 301.980, 308.059 285.943 C 328.060 266.461, 321.808 231.893, 296.178 220.246 C 288.085 216.569, 273.908 216.050, 266 219.142 M 356.329 222.875 C 345.654 226.839, 338.676 233.250, 333.848 243.533 C 323.247 266.107, 337.056 292.090, 362.340 297.145 C 372.664 299.209, 385.895 295.421, 394.377 287.974 C 404.183 279.364, 410.319 260.319, 405 255 C 403.172 253.172, 401.667 253, 387.500 253 C 373.333 253, 371.828 253.172, 370 255 C 367.504 257.496, 367.429 261.173, 369.829 263.345 C 371.301 264.677, 373.837 265, 382.829 265 C 389.895 265, 394 265.382, 394 266.040 C 394 268.159, 389.975 274.871, 386.800 278.046 C 380.083 284.763, 367.498 287.337, 358.927 283.747 C 354.493 281.889, 348.715 276.893, 346.091 272.648 C 338.711 260.707, 343.235 243.723, 355.639 236.800 C 365.299 231.409, 375.501 232.052, 384.758 238.633 C 390.221 242.517, 392.217 242.783, 395 240 C 399.552 235.448, 395.327 229.337, 384.046 224.154 C 376.485 220.681, 363.814 220.096, 356.329 222.875 M 117 240 L 117 251 125.435 251 C 135.602 251, 138.378 250.068, 140.996 245.775 C 143.388 241.852, 143.521 238.907, 141.483 234.967 C 139.141 230.439, 135.300 229, 125.550 229 L 117 229 117 240 M 270.703 230.381 C 264.500 232.694, 259.499 236.531, 256.202 241.508 C 243.800 260.232, 257.097 285.250, 279.451 285.250 C 300.833 285.250, 314.512 262.573, 304.371 243.940 C 299.477 234.948, 291.437 229.923, 281 229.333 C 276.972 229.105, 273.056 229.504, 270.703 230.381 M 117 274.500 L 117 286 125.750 285.994 C 137.265 285.987, 141.581 284.736, 144.048 280.689 C 148.101 274.043, 145.281 266.005, 138.207 264.041 C 136.168 263.474, 130.563 263.009, 125.750 263.006 L 117 263 117 274.500 M 42.470 348.406 C 41.088 350.515, 40.931 355.726, 41.197 390.656 C 41.495 429.804, 41.540 430.587, 43.801 435.500 C 46.713 441.826, 51.130 446.449, 57.500 449.839 L 62.500 452.500 257 452.500 L 451.500 452.500 455.616 450.298 C 462.318 446.713, 465.701 443.286, 468.942 436.800 L 472 430.681 472 389.912 C 472 345.122, 472.120 346, 465.985 346 C 460.058 346, 460 346.423, 460 389.336 C 460 426.711, 459.920 428.370, 457.947 431.881 C 456.817 433.890, 454.263 436.652, 452.270 438.017 L 448.647 440.500 258.573 440.774 C 45.320 441.082, 62.684 441.688, 56.926 433.739 L 54 429.700 54 391.415 C 54 353.815, 53.616 348.648, 50.687 346.786 C 48.160 345.179, 44.054 345.988, 42.470 348.406"
+              stroke="none" fill="#ffff" fill-rule="evenodd" />
+          </svg>
+          <h2 class="title-blog">Blog y Podcast</h2>
+        </div>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap">
+              <div class="box-blog-size">
+                <div class="box-blog">
+                  <img class="img-blog" src="./img/blog/una-taza-de-javascript.png" alt="blog">
+                  <div class="p-6 bg-white">
+                    <h1 class="title-blog__h1">Una Taza de JavaScript</h1>
+                    <p class="content-blog">Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Expedita fuga voluptate rerum ut saepe perferendis provident! Culpa consequuntur, molestiae
+                      aliquam repudiandae, corporis explicabo minima, cumque temporibus eos cupiditate ipsum adipisci?
+                    </p>
+                    <div class="flex items-center flex-wrap">
+                      <a class="btn-view-more__blog" href="#">{ Ver mas }</a>
+
+                      <span class="span-view-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                          <circle cx="12" cy="12" r="3"></circle>
+                        </svg>1.2K
+                      </span>
+                      <span class="span-comments-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path
+                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                          </path>
+                        </svg>6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-blog-size">
+                <div class="box-blog">
+                  <img class="img-blog" src="./img/blog/6cc16fea15df87ff49dc09bf236eedb3.jpeg" alt="blog">
+                  <div class="p-6 bg-white">
+                    <h1 class="title-blog__h1">PHP no esta muerto</h1>
+                    <p class="content-blog">Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Expedita fuga voluptate rerum ut saepe perferendis provident! Culpa consequuntur, molestiae
+                      aliquam repudiandae, corporis explicabo minima, cumque temporibus eos cupiditate ipsum adipisci?
+                    </p>
+                    <div class="flex items-center flex-wrap ">
+                      <a class="btn-view-more__blog" href="#">{ Ver mas }</a>
+                      <span class="span-view-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                          <circle cx="12" cy="12" r="3"></circle>
+                        </svg>1.2K
+                      </span>
+                      <span class="span-comments-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path
+                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                          </path>
+                        </svg>6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-blog-size">
+                <div class="box-blog">
+                  <img class="img-blog" src="./img/blog/laravel-logo.jpg" alt="blog">
+                  <div class="p-6 bg-white">
+                    <h1 class="title-blog__h1">Novedades de Laravel</h1>
+                    <p class="content-blog">Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Expedita fuga voluptate rerum ut saepe perferendis provident! Culpa consequuntur, molestiae
+                      aliquam repudiandae, corporis explicabo minima, cumque temporibus eos cupiditate ipsum adipisci?
+                    </p>
+                    <div class="flex items-center flex-wrap ">
+                      <a class="btn-view-more__blog" href="#">{ Ver mas }</a>
+                      <span class="span-view-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                          <circle cx="12" cy="12" r="3"></circle>
+                        </svg>1.2K
+                      </span>
+                      <span class="span-comments-blog">
+                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                          <path
+                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                          </path>
+                        </svg>6
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- END BLOG -->
+
+    <!-- SECCION CONTACTO -->
+    <div class="w-full h-auto" id="contact">
+      <div class="size-banner bg-contact-screen">
+        <div class="container-contact">
+
+          <div class="grid-contact">
+            <div class="data-contact">
+              <h2 class="title-contact">Datos de Contacto</h2>
+              <a href="mailto:Johannsalas96@gmail.com" class="data-contact-items">
+                <svg class="svg-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
+                    fill="rgba(255,255,255,1)"></path>
+                </svg>
+                <span class="pl-2">Johannsalas96@gmail.com</span>
+              </a>
+              <a href="https://wa.me/+584243349888?text=Hola Johann vengo desde tu WebSite" class="data-contact-items">
+                <svg class="svg-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
+                    fill="rgba(255,255,255,1)"></path>
+                </svg>
+
+                <span class="pl-2">+58 (424) 334.98.88</span>
+              </a>
+              <a class="data-contact-items">
+                <svg class="svg-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M9.97487 8.97487C11.3417 7.60804 11.3417 5.39196 9.97487 4.02513C8.60804 2.65829 6.39196 2.65829 5.02513 4.02513C3.65829 5.39196 3.65829 7.60804 5.02513 8.97487L7.5 11.4497L9.97487 8.97487ZM7.5 14.2782L3.61091 10.3891C1.46303 8.2412 1.46303 4.7588 3.61091 2.61091C5.7588 0.463029 9.2412 0.463029 11.3891 2.61091C13.537 4.7588 13.537 8.2412 11.3891 10.3891L7.5 14.2782ZM7.5 8C6.67157 8 6 7.32843 6 6.5C6 5.67157 6.67157 5 7.5 5C8.32843 5 9 5.67157 9 6.5C9 7.32843 8.32843 8 7.5 8ZM16.5 20.4497L18.9749 17.9749C20.3417 16.608 20.3417 14.392 18.9749 13.0251C17.608 11.6583 15.392 11.6583 14.0251 13.0251C12.6583 14.392 12.6583 16.608 14.0251 17.9749L16.5 20.4497ZM20.3891 19.3891L16.5 23.2782L12.6109 19.3891C10.463 17.2412 10.463 13.7588 12.6109 11.6109C14.7588 9.46303 18.2412 9.46303 20.3891 11.6109C22.537 13.7588 22.537 17.2412 20.3891 19.3891ZM16.5 17C15.6716 17 15 16.3284 15 15.5C15 14.6716 15.6716 14 16.5 14C17.3284 14 18 14.6716 18 15.5C18 16.3284 17.3284 17 16.5 17Z"
+                    fill="rgba(255,255,255,1)"></path>
+                </svg>
+
+
+                <span class="pl-2">Venezuela, Maracay - Edo. Aragua</span>
+              </a>
+            </div>
+
+            <div class="form-contact-container">
+              <h2 class="form-title-contact">Contactame</h2>
+              <form action="">
+                <div class="relative mb-4">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Nombre completo</label>
+                  <input type="text" id="name" name="name"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Correo electronico</label>
+                  <input type="email" id="email" name="email"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Mensaje</label>
+                  <textarea id="message" name="message"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                  class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACTO -->
+
+    <footer class="footer-container">
+      <div class="grid-items-footer">
+        <a href="https://github.com/johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(10.66667,10.66667)">
+                <path
+                  d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/jhs_code/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/johann-hurtado/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(8.53333,8.53333)">
+                <path
+                  d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.496,8.403c0.842,0 1.403,0.561 1.403,1.309c0,0.748 -0.561,1.309 -1.496,1.309c-0.842,0.001 -1.403,-0.561 -1.403,-1.309c0,-0.748 0.561,-1.309 1.496,-1.309zM12,20h-3v-8h3zM22,20h-2.824v-4.372c0,-1.209 -0.753,-1.488 -1.035,-1.488c-0.282,0 -1.224,0.186 -1.224,1.488c0,0.186 0,4.372 0,4.372h-2.917v-8h2.918v1.116c0.376,-0.651 1.129,-1.116 2.541,-1.116c1.412,0 2.541,1.116 2.541,3.628z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(8.53333,8.53333)">
+                <path
+                  d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.896,-2 -2,-2zM22.689,13.474c-0.13,0.012 -0.261,0.02 -0.393,0.02c-1.495,0 -2.809,-0.768 -3.574,-1.931c0,3.049 0,6.519 0,6.577c0,2.685 -2.177,4.861 -4.861,4.861c-2.684,-0.001 -4.861,-2.178 -4.861,-4.862c0,-2.685 2.177,-4.861 4.861,-4.861c0.102,0 0.201,0.009 0.3,0.015v2.396c-0.1,-0.012 -0.197,-0.03 -0.3,-0.03c-1.37,0 -2.481,1.111 -2.481,2.481c0,1.37 1.11,2.481 2.481,2.481c1.371,0 2.581,-1.08 2.581,-2.45c0,-0.055 0.024,-11.17 0.024,-11.17h2.289c0.215,2.047 1.868,3.663 3.934,3.811z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a href="https://twitter.com/Johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="grid-items-footer"><img class="w-7" src="./img/logo-jhs.png" alt="" srcset=""></div>
+      <div class="grid-items-footer text-white">Copyright 2023. All Rights Reserved</div>
+    </footer>
+  </section>
+  <!-- MODALES -->
+
+  <!-- About Modal -->
+  <div id="modalAbout" tabindex="-1"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-7xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-md md:text-lg font-medium text-gray-900 dark:text-white">
+            Hola mundo Soy Johann Hurtado
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="modalAbout">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Cerrar</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <div class="container-modal_about">
+            <img class="img-modal_about" src="./img/modal-johann.jpg" alt="">
+            <div class="box-content_modal__about">
+              <div class="content-modal_bio">
+                <p>¡Hola! Soy un apasionado profesional en desarrollado de software con experiencia en
+                  PHP, HTML5, JavaScript, CSS3, Laravel, WordPress y SQL. También tengo conocimientos
+                  en inteligencia artificial, especialmente en ChatGPT. Me encanta crear sistemas de
+                  automatización, administración y almacenamiento, así como páginas web responsive y
+                  software de compra y venta como POS. Además, tengo habilidades en gestión de
+                  proyectos con metodología Scrum y manejo de personal.
+                </p>
+                <br>
+                <p>En el campo del SEO, puedo posicionar empresas y sitios web en Google utilizando
+                  herramientas como Google Analytics, Google Search Console y Semrush. También estoy
+                  familiarizado con manejadores de versiones como Git, GitHub y Bitbucket.
+                </p>
+                <br>
+                <p> Soy una persona amigable, responsable y me encanta compartir contenido digital en
+                  diferentes plataformas. Soy miembro y estudiante activo de la comunidad de Platzi,
+                  siempre actualizando mis habilidades y aprendiendo nuevos lenguajes de programación.
+                </p>
+              </div>
+
+              <div class="p-3">
+                <h2 class="text-lg font-bold">Experiencia Laboral</h2>
+
+                <ol class="exp-content">
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Corp. Slas Developments</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">CEO-FUNDER</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2021 - Actualidad
+                      </p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">GDA Lab.</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
+                        Engineer</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2023 - Actualidad</p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grupo DTG</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
+                        Engineer</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">Enero 2023 - Agosto - 2023</p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Puntotec Corp.</h3>
+                      <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Gerente
+                        de Desarrollo</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2018 - 2022</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="p-3">
+                <h2 class="text-lg font-bold">Skills</h2>
+                <div class="skill-grid">
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">HTML5</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">CSS3</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">PHP</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">JavaScript</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">Python</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">Laravel</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">Tailwind Css</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">Bootstrap</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-blue-700 dark:text-white">WordPress</span>
+                      <span class="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="p-3 flex md:justify-start justify-center">
+                <a class="download-cv" href=" ./assets/CV Johann Hurtado.pdf" download="CV-Johann Hurtado">CV
+                  Download</a>
+              </div>
+
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center justify-end p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="modalAbout" type="button"
+              class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      window.openModal = function (modalId) {
+        document.getElementById(modalId).style.display = 'block'
+        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
+      }
+
+      window.closeModal = function (modalId) {
+        document.getElementById(modalId).style.display = 'none'
+        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+      }
+
+      // Close all modals when press ESC
+      document.onkeydown = function (event) {
+        event = event || window.event;
+        if (event.keyCode === 27) {
+          document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+          let modals = document.getElementsByClassName('modal');
+          Array.prototype.slice.call(modals).forEach(i => {
+            i.style.display = 'none'
+          })
+        }
+      };
+
+      document.getElementById('hamburger-button').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('menu-content').classList.toggle('translate-x-full');
+      });
+
+      document.querySelectorAll('.menu-option').forEach(function (menuOption) {
+        menuOption.addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.add('hidden');
+          document.getElementById('menu-content').classList.add('translate-x-full');
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+
+</html>
