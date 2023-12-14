@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../img/favico.png" />
+  <link rel="icon" type="image/x-icon" href="./img/favico.png" />
   <title>Johann Hurtado</title>
-  <link rel="stylesheet" href="../public/css/tailwind.css">
+  <link rel="stylesheet" href="./css/tailwind.css">
 </head>
 
 <body>
@@ -286,7 +286,7 @@
     <!-- END COURSES -->
 
     <!-- SECCION PORTAFOLIO -->
-    <div class="w-full h-auto bg-red-700" id="portfolio">
+    <div class="w-full h-auto" id="portfolio">
       <div class="size-banner bg-portfolio-screen">
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
@@ -883,42 +883,23 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      window.openModal = function (modalId) {
-        document.getElementById(modalId).style.display = 'block'
-        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
-      }
+  </div>
 
-      window.closeModal = function (modalId) {
-        document.getElementById(modalId).style.display = 'none'
-        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-      }
 
-      // Close all modals when press ESC
-      document.onkeydown = function (event) {
-        event = event || window.event;
-        if (event.keyCode === 27) {
-          document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-          let modals = document.getElementsByClassName('modal');
-          Array.prototype.slice.call(modals).forEach(i => {
-            i.style.display = 'none'
-          })
-        }
-      };
+  <script type="text/javascript">
+    document.getElementById('hamburger-button').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+      document.getElementById('menu-content').classList.toggle('translate-x-full');
+    });
 
-      document.getElementById('hamburger-button').addEventListener('click', function () {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-        document.getElementById('menu-content').classList.toggle('translate-x-full');
+    document.querySelectorAll('.menu-option').forEach(function (menuOption) {
+      menuOption.addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.getElementById('menu-content').classList.add('translate-x-full');
       });
-
-      document.querySelectorAll('.menu-option').forEach(function (menuOption) {
-        menuOption.addEventListener('click', function () {
-          document.getElementById('mobile-menu').classList.add('hidden');
-          document.getElementById('menu-content').classList.add('translate-x-full');
-        });
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 
 </html>

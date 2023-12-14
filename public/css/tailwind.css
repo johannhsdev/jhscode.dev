@@ -1266,8 +1266,8 @@ input:checked+.toggle-bg {
     overflow-x: hidden
 }
 
-.overflow-y-hidden {
-    overflow-y: hidden
+.scroll-smooth {
+    scroll-behavior: smooth
 }
 
 .rounded {
@@ -1399,11 +1399,6 @@ input:checked+.toggle-bg {
 
 .bg-gray-900\/50 {
     background-color: #11182780
-}
-
-.bg-red-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(200 30 30/var(--tw-bg-opacity))
 }
 
 .bg-transparent {
