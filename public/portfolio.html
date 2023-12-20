@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favico.png" />
+  <title>Portafolio - Johann Hurtado</title>
+  <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+
+<body>
+  <header class="header-navbar">
+
+    <!-- MENU MOBILE -->
+    <div class="navbar-grid-mobile md:hidden" id="mobile-navbar">
+      <a class="navbar-logo" href="/">
+        <img class="nav-size-img" src="./img/logo-jhs.png" alt="" srcset="">
+      </a>
+      <a class="btn-hamburguer-mobile" id="hamburger-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 z-20 top-12">
+      <div class="bg-black opacity-50 min-h-screen min-w-full" id="menu-overlay"></div>
+      <nav
+        class=" bg-black right-0 z-30 translate-x-fullbg-black fixed left-0 top-12 h-auto w-64 p-4 pt-10 space-y-4 overflow-y-auto transition-transform duration-200 ease-in-out transform translate-x-full flex flex-col items-start rounded rounded-br-xl"
+        id="menu-content">
+        <a href="index.html#home" class="menu-option hover:text-primary">Inicio</a>
+        <a href="index.html#about" class="menu-option hover:text-primary">Conoceme</a>
+        <a href="index.html#skills" class="menu-option hover:text-primary">Skills</a>
+        <a href="index.html#courses" class="menu-option hover:text-primary">Cursos</a>
+        <a href="index.html#portfolio" class="menu-option hover:text-primary">Portafolio</a>
+        <a href="index.html#blogs" class="menu-option hover:text-primary">Blogs</a>
+        <a href="index.html#contact" class="menu-option hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+    <!-- MENU MOBILE -->
+
+    <!-- MENU DESTOK -->
+    <div class="navbar-grid-destok hidden">
+      <a class="navbar-logo" href="/">
+        <img src="./img/logo-jhs.png" alt="" srcset="">
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html#home" class="hover:text-primary">Inicio</a>
+        <a href="index.html#about" class="hover:text-primary">Conoceme</a>
+        <a href="index.html#skills" class="hover:text-primary">Skills</a>
+        <a href="index.html#courses" class="hover:text-primary">Cursos</a>
+        <a href="index.html#portfolio" class="hover:text-primary">Portafolio</a>
+        <a href="index.html#blogs" class="hover:text-primary">Blogs</a>
+      </nav>
+      <a href="index.html#contact" class="btn-contact-nav">Contacto
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <!-- MENU DESTOK -->
+  </header>
+
+  <section class="w-full h-screen">
+
+    <!-- SECCION HOME -->
+      <div class="w-full query-portfolio">
+        <div class="size-banner bg-portfolio-page">
+          <div class=" w-full h-full center-x-y">
+            <h1 class="title-page_portfolio"> Portafolio </h1>
+            <p class="sub-title-home">[ Todos mis proyectos ]</p>
+          </div>
+        </div>
+      </div>
+    <!-- END HOME -->
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <div class="w-full h-auto" id="portfolio">
+      <div class="size-banner bg-portfolio-screen">
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap">
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/pritzkow.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Pritzkow Construction</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" target="_blank" rel="noopener" href="https://slasdevelopments.com/portfolio/pritzkow/">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/mariom.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Mariom</h2>
+                    <h3 class="description-text__h3">WebSite Blog personal</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" target="_blank" rel="noopener" href="https://slasdevelopments.com/portfolio/yoganotyoga/">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/genesismil.png">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Genesis 1000</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" target="_blank" rel="noopener" href="https://slasdevelopments.com/portfolio/genesis1000/">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/adh.jpg">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Autismo dejan huellas</h2>
+                    <h3 class="description-text__h3">WebSite Org</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" target="_blank" rel="noopener" href="https://slasdevelopments.com/portfolio/adh/">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-projects">
+                <div class="box-content-projects">
+                  <img alt="" class="img-project" src="./img/portafolios/cafre.jpg">
+                  <div class="description-text">
+                    <h2 class="description-text__h2">Cafre C.A</h2>
+                    <h3 class="description-text__h3">WebSite Corporativa</h3>
+                    <span class="inline-flex">
+                      <a class="btn-view-project" target="_blank" rel="noopener" href="https://slasdevelopments.com/portfolio/cafreca/">
+                        Ver Proyecto
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- END PORTAFOLIO -->
+
+    <footer class="footer-container">
+      <div class="grid-items-footer">
+        <a href="https://github.com/johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(10.66667,10.66667)">
+                <path
+                  d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/jhs_code/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/johann-hurtado/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(8.53333,8.53333)">
+                <path
+                  d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.496,8.403c0.842,0 1.403,0.561 1.403,1.309c0,0.748 -0.561,1.309 -1.496,1.309c-0.842,0.001 -1.403,-0.561 -1.403,-1.309c0,-0.748 0.561,-1.309 1.496,-1.309zM12,20h-3v-8h3zM22,20h-2.824v-4.372c0,-1.209 -0.753,-1.488 -1.035,-1.488c-0.282,0 -1.224,0.186 -1.224,1.488c0,0.186 0,4.372 0,4.372h-2.917v-8h2.918v1.116c0.376,-0.651 1.129,-1.116 2.541,-1.116c1.412,0 2.541,1.116 2.541,3.628z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(8.53333,8.53333)">
+                <path
+                  d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.896,-2 -2,-2zM22.689,13.474c-0.13,0.012 -0.261,0.02 -0.393,0.02c-1.495,0 -2.809,-0.768 -3.574,-1.931c0,3.049 0,6.519 0,6.577c0,2.685 -2.177,4.861 -4.861,4.861c-2.684,-0.001 -4.861,-2.178 -4.861,-4.862c0,-2.685 2.177,-4.861 4.861,-4.861c0.102,0 0.201,0.009 0.3,0.015v2.396c-0.1,-0.012 -0.197,-0.03 -0.3,-0.03c-1.37,0 -2.481,1.111 -2.481,2.481c0,1.37 1.11,2.481 2.481,2.481c1.371,0 2.581,-1.08 2.581,-2.45c0,-0.055 0.024,-11.17 0.024,-11.17h2.289c0.215,2.047 1.868,3.663 3.934,3.811z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a href="https://twitter.com/Johannht2" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="svg-footer-social" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="grid-items-footer"><a href="/"><img class="w-7" src="./img/logo-jhs.png" alt="" srcset=""></a></div>
+      <div class="grid-items-footer text-white">Copyright 2023. All Rights Reserved</div>
+    </footer>
+  </section>
+  <!-- MODALES -->
+
+  <!-- About Modal -->
+  <div id="modalAbout" tabindex="-1"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-7xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-md md:text-lg font-medium text-gray-900 dark:text-white">
+            Hola mundo Soy Johann Hurtado
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="modalAbout">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Cerrar</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <div class="container-modal_about">
+            <img class="img-modal_about" src="./img/modal-johann.jpg" alt="">
+            <div class="box-content_modal__about">
+              <div class="content-modal_bio">
+                <p>¡Hola! Soy un apasionado profesional en desarrollado de software con experiencia en
+                  PHP, HTML5, JavaScript, CSS3, Laravel, WordPress y SQL. También tengo conocimientos
+                  en inteligencia artificial, especialmente en ChatGPT. Me encanta crear sistemas de
+                  automatización, administración y almacenamiento, así como páginas web responsive y
+                  software de compra y venta como POS. Además, tengo habilidades en gestión de
+                  proyectos con metodología Scrum y manejo de personal.
+                </p>
+                <br>
+                <p>En el campo del SEO, puedo posicionar empresas y sitios web en Google utilizando
+                  herramientas como Google Analytics, Google Search Console y Semrush. También estoy
+                  familiarizado con manejadores de versiones como Git, GitHub y Bitbucket.
+                </p>
+                <br>
+                <p> Soy una persona amigable, responsable y me encanta compartir contenido digital en
+                  diferentes plataformas. Soy miembro y estudiante activo de la comunidad de Platzi,
+                  siempre actualizando mis habilidades y aprendiendo nuevos lenguajes de programación.
+                </p>
+              </div>
+
+              <div class="p-3">
+                <h2 class="text-lg text-secondary font-bold">Experiencia Laboral</h2>
+
+                <ol class="exp-content">
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Corp. Slas Developments</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">CEO-FUNDER</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2021 - Actualidad
+                      </p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">GDA Lab.</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
+                        Engineer</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2023 - Actualidad</p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Grupo DTG</h3>
+                      <time
+                        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software
+                        Engineer</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">Enero 2023 - Agosto - 2023</p>
+                    </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                    <div class="flex items-center">
+                      <div
+                        class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                        <svg class="w-2.5 h-2.5 text-secondary dark:text-blue-300" aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                      </div>
+                      <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                    </div>
+                    <div class="mt-3 sm:pe-8">
+                      <h3 class="text-lg font-semibold text-secondary dark:text-white">Puntotec Corp.</h3>
+                      <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Gerente
+                        de Desarrollo</time>
+                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">2018 - 2022</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="p-3">
+                <h2 class="text-lg text-secondary font-bold">Skills</h2>
+                <div class="skill-grid">
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">HTML5</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">CSS3</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">60%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">PHP</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">JavaScript</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">Python</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">35%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 35%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">Laravel</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">Tailwind Css</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">Bootstrap</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base font-medium text-secondary dark:text-white">WordPress</span>
+                      <span class="text-sm font-medium text-secondary dark:text-white">50%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                      <div class="bg-gradient-to-l from-[#10afef] to-[#2c2d50] h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="p-3 flex md:justify-start justify-center">
+                <a class="download-cv" href=" ./assets/CV Johann Hurtado.pdf" download="CV-Johann Hurtado">CV
+                  Download</a>
+              </div>
+
+            </div>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center justify-end p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="modalAbout" type="button"
+              class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    document.getElementById('hamburger-button').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+      document.getElementById('menu-content').classList.toggle('translate-x-full');
+    });
+
+    document.querySelectorAll('.menu-option').forEach(function (menuOption) {
+      menuOption.addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.getElementById('menu-content').classList.add('translate-x-full');
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+
+</html>

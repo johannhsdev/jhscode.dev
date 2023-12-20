@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
+  content: ["./public/*.html", "./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       backgroundImage: {
@@ -10,8 +10,11 @@ module.exports = {
         'about-screen': 'url(../img/background-about.png)',
         'skills-screen': 'url(../img/background-skills.png)',
         'courses-screen': 'url(../img/background-courses.png)',
+        'courses-page': 'url(../img/courses-page.png)',
         'portfolio-screen': 'url(../img/background-portfolio.png)',
+        'portfolio-page': 'url(../img/portfolio-page.png)',
         'blog-screen': 'url(../img/background-blogs.png)',
+        'blog-page': 'url(../img/blogs-page.png)',
         'contact-screen': 'url(../img/background-contact.png)',
       },
 
@@ -28,6 +31,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('tailwind-scrollbar-hide')
   ],
 };

@@ -243,11 +243,23 @@
 .btn-view-more {
     @apply
     /* MOBILE */
-    flex mx-auto p-1 pl-4 pr-4 rounded-full bg-primary hover:bg-secondary transition-all ease-in-out hover:border-2 text-white font-bold text-xl
+    flex justify-center w-32 mx-auto p-1 pl-4 pr-4 rounded-full bg-primary hover:bg-secondary transition-all ease-in-out hover:border-2 text-white font-bold text-xl
 }
 
 .btn-view-more_blog{
     @apply flex justify-center w-32 mx-auto p-1 pl-4 pr-4 rounded-full bg-secondary hover:bg-primary transition-all ease-in-out hover:border-2 text-white font-bold text-xl
+}
+
+.query-courses {
+    @apply h-[13rem] lg:h-[27rem] md:h-[18rem]
+}
+
+.title-page_courses {
+    @apply text-white font-bold text-4xl md:text-6xl leading-snug md:text-center pt-10
+}
+
+.sub-title_courses{
+    @apply text-white font-normal text-lg md:text-xl
 }
 
 /* END COURSES */
@@ -331,6 +343,13 @@
     md:mb-0
 }
 
+.query-portfolio {
+    @apply h-[13rem] lg:h-[27rem] md:h-[18rem]
+}
+
+.title-page_portfolio {
+    @apply text-white font-bold text-4xl md:text-6xl leading-snug md:text-center pt-10 uppercase
+}
 /* END PORTFOLIO */
 
 /* BLOG */
@@ -414,6 +433,17 @@
     text-gray-400 inline-flex items-center leading-none text-sm
 }
 
+.query-blog {
+    @apply h-[17rem] md:h-[27rem]
+}
+
+.title-page_blog {
+    @apply text-white font-bold text-2xl md:text-4xl lg:text-6xl leading-snug md:text-center pt-10 uppercase
+}
+
+.sub-title_blog {
+    @apply text-white font-normal text-lg md:text-xl
+}
 /* END BLOG */
 
 
@@ -522,4 +552,68 @@
     @apply pt-2 pb-2 p-5 bg-secondary font-semibold text-xs text-white rounded-full transition-all ease-linear hover:pt-1 hover:pb-1 hover:p-3 hover:bg-gradient-to-t hover:from-[#10afef] hover:to-[#2c2d50]
 }
 
+/* MODAL BLOG */
+.container-modal_blog {
+    @apply w-full h-auto flex flex-col
+}
+
+.img-modal_blog {
+    @apply lg:w-full h-[20rem] object-cover rounded-t-lg rounded-b-lg shadow-lg md:w-full w-full
+}
+
+.box-content_modal__blog {
+    @apply px-4 text-base/5 font-normal
+}
+
+.content-modal_blog {
+    @apply p-3 text-lg
+}
+
+.btn-blog-comment {
+    @apply inline-flex items-center transition-all ease-in-out bg-primary border-0 py-1 px-3 focus:outline-none hover:bg-gradient-to-t hover:from-[#10afef] hover:to-[#2c2d50] rounded text-base mt-4 text-white
+}
+
+ .title-comment{
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+}
+
+.label-name_comment {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+}
+
+.input-name_comment {
+    @apply block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+}
+
+.label-comment {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+}
+
+.textarea-comment {
+    @apply block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+}
+
+.container-grid_comment {
+    @apply flex flex-col gap-1 w-full max-w-7xl
+}
+
+.box-header_comment {
+    @apply flex items-center space-x-2 rtl:space-x-reverse
+}
+
+.title-header_comment {
+    @apply text-sm font-semibold text-gray-900 dark:text-white
+}
+
+.hour-header_comment {
+    @apply text-sm font-normal text-gray-500 dark:text-gray-400
+}
+
+.box-content_comment {
+    @apply flex flex-col leading-snug p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-e-xl 
+}
+
+.content_comment {
+    @apply text-sm font-normal text-gray-900 dark:text-white
+} 
 /* END FOOTER */
