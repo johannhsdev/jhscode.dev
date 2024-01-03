@@ -1452,27 +1452,27 @@ input:checked+.toggle-bg {
 }
 
 .bg-about-screen {
-    background-image: url(../img/background-about.png)
+    background-image: url(../img/background-about.webp)
 }
 
 .bg-blog-page {
-    background-image: url(../img/blogs-page.png)
+    background-image: url(../img/blogs-page.webp)
 }
 
 .bg-blog-screen {
-    background-image: url(../img/background-blogs.png)
+    background-image: url(../img/background-blogs.webp)
 }
 
 .bg-contact-screen {
-    background-image: url(../img/background-contact.png)
+    background-image: url(../img/background-contact.webp)
 }
 
 .bg-courses-page {
-    background-image: url(../img/courses-page.png)
+    background-image: url(../img/courses-page.webp)
 }
 
 .bg-courses-screen {
-    background-image: url(../img/background-courses.png)
+    background-image: url(../img/background-courses.webp)
 }
 
 .bg-gradient-to-br {
@@ -1484,15 +1484,15 @@ input:checked+.toggle-bg {
 }
 
 .bg-portfolio-page {
-    background-image: url(../img/portfolio-page.png)
+    background-image: url(../img/portfolio-page.webp)
 }
 
 .bg-portfolio-screen {
-    background-image: url(../img/background-portfolio.png)
+    background-image: url(../img/background-portfolio.webp)
 }
 
 .bg-skills-screen {
-    background-image: url(../img/background-skills.png)
+    background-image: url(../img/background-skills.webp)
 }
 
 .from-\[\#10afef\] {
@@ -2035,18 +2035,18 @@ input:checked+.toggle-bg {
 }
 
 .banner-home {
-    background-image: url(../img/about-mobile.png)
+    background-image: url(../img/about-mobile.webp)
 }
 
 @media (min-width:768px) {
     .banner-home {
-        background-image: url(../img/about-table.png)
+        background-image: url(../img/about-table.webp)
     }
 }
 
 @media (min-width:1024px) {
     .banner-home {
-        background-image: url(../img/background.png)
+        background-image: url(../img/background.webp)
     }
 }
 
